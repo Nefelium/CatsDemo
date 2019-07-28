@@ -11,6 +11,7 @@
 - pagination
 
 Использованы API:
+
 https://cat-fact.herokuapp.com/facts
 https://aws.random.cat/meow
 
