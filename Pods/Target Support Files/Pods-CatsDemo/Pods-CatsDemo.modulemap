@@ -1,0 +1,6 @@
+framework module Pods_CatsDemo {
+  umbrella header "Pods-CatsDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
