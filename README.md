@@ -12,7 +12,6 @@
 
 Использованы API:
 https://cat-fact.herokuapp.com/facts
-
 https://aws.random.cat/meow
 
 Задание: Создать таббар с двумя вкладками. В одной вкладке отображаются факты о кошках. 
