@@ -29,23 +29,6 @@
 		0D1D9E0031500C5EBEF8C4E5 /* Pods_CatsDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC1CF68F4621BE67793E2A5B /* Pods_CatsDemo.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		070AC52A22E8C218007DCE85 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 070AC50D22E8C216007DCE85 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 070AC51422E8C216007DCE85;
-			remoteInfo = CatsDemo;
-		};
-		070AC53522E8C218007DCE85 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 070AC50D22E8C216007DCE85 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 070AC51422E8C216007DCE85;
-			remoteInfo = CatsDemo;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		009EC160B441010AAA8C8981 /* Pods-CatsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatsDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CatsDemo/Pods-CatsDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		070AC51522E8C216007DCE85 /* CatsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,8 +37,6 @@
 		070AC51F22E8C218007DCE85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		070AC52222E8C218007DCE85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		070AC52422E8C218007DCE85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		070AC52922E8C218007DCE85 /* CatsDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatsDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		070AC53422E8C218007DCE85 /* CatsDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatsDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		070AC54722E8C29C007DCE85 /* cat-facts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cat-facts.png"; sourceTree = "<group>"; };
 		070AC54822E8C29C007DCE85 /* cat-favs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cat-favs.png"; sourceTree = "<group>"; };
 		070AC54B22E8C547007DCE85 /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
@@ -84,20 +65,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		070AC52622E8C218007DCE85 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		070AC53122E8C218007DCE85 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -115,8 +82,6 @@
 			isa = PBXGroup;
 			children = (
 				070AC51522E8C216007DCE85 /* CatsDemo.app */,
-				070AC52922E8C218007DCE85 /* CatsDemoTests.xctest */,
-				070AC53422E8C218007DCE85 /* CatsDemoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -283,42 +248,6 @@
 			productReference = 070AC51522E8C216007DCE85 /* CatsDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		070AC52822E8C218007DCE85 /* CatsDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 070AC54022E8C218007DCE85 /* Build configuration list for PBXNativeTarget "CatsDemoTests" */;
-			buildPhases = (
-				070AC52522E8C218007DCE85 /* Sources */,
-				070AC52622E8C218007DCE85 /* Frameworks */,
-				070AC52722E8C218007DCE85 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				070AC52B22E8C218007DCE85 /* PBXTargetDependency */,
-			);
-			name = CatsDemoTests;
-			productName = CatsDemoTests;
-			productReference = 070AC52922E8C218007DCE85 /* CatsDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		070AC53322E8C218007DCE85 /* CatsDemoUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 070AC54322E8C218007DCE85 /* Build configuration list for PBXNativeTarget "CatsDemoUITests" */;
-			buildPhases = (
-				070AC53022E8C218007DCE85 /* Sources */,
-				070AC53122E8C218007DCE85 /* Frameworks */,
-				070AC53222E8C218007DCE85 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				070AC53622E8C218007DCE85 /* PBXTargetDependency */,
-			);
-			name = CatsDemoUITests;
-			productName = CatsDemoUITests;
-			productReference = 070AC53422E8C218007DCE85 /* CatsDemoUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -331,14 +260,6 @@
 				TargetAttributes = {
 					070AC51422E8C216007DCE85 = {
 						CreatedOnToolsVersion = 10.3;
-					};
-					070AC52822E8C218007DCE85 = {
-						CreatedOnToolsVersion = 10.3;
-						TestTargetID = 070AC51422E8C216007DCE85;
-					};
-					070AC53322E8C218007DCE85 = {
-						CreatedOnToolsVersion = 10.3;
-						TestTargetID = 070AC51422E8C216007DCE85;
 					};
 				};
 			};
@@ -356,8 +277,6 @@
 			projectRoot = "";
 			targets = (
 				070AC51422E8C216007DCE85 /* CatsDemo */,
-				070AC52822E8C218007DCE85 /* CatsDemoTests */,
-				070AC53322E8C218007DCE85 /* CatsDemoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -373,20 +292,6 @@
 				070AC54922E8C29C007DCE85 /* cat-facts.png in Resources */,
 				070AC51E22E8C217007DCE85 /* Main.storyboard in Resources */,
 				070AC54C22E8C547007DCE85 /* Detail.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		070AC52722E8C218007DCE85 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		070AC53222E8C218007DCE85 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,34 +381,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		070AC52522E8C218007DCE85 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		070AC53022E8C218007DCE85 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		070AC52B22E8C218007DCE85 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 070AC51422E8C216007DCE85 /* CatsDemo */;
-			targetProxy = 070AC52A22E8C218007DCE85 /* PBXContainerItemProxy */;
-		};
-		070AC53622E8C218007DCE85 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 070AC51422E8C216007DCE85 /* CatsDemo */;
-			targetProxy = 070AC53522E8C218007DCE85 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		070AC51C22E8C217007DCE85 /* Main.storyboard */ = {
@@ -576,7 +454,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -631,7 +509,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -681,88 +559,6 @@
 			};
 			name = Release;
 		};
-		070AC54122E8C218007DCE85 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4ASULEAFDR;
-				INFOPLIST_FILE = CatsDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nefelium.CatsDemoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CatsDemo.app/CatsDemo";
-			};
-			name = Debug;
-		};
-		070AC54222E8C218007DCE85 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4ASULEAFDR;
-				INFOPLIST_FILE = CatsDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nefelium.CatsDemoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CatsDemo.app/CatsDemo";
-			};
-			name = Release;
-		};
-		070AC54422E8C218007DCE85 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4ASULEAFDR;
-				INFOPLIST_FILE = CatsDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nefelium.CatsDemoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CatsDemo;
-			};
-			name = Debug;
-		};
-		070AC54522E8C218007DCE85 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4ASULEAFDR;
-				INFOPLIST_FILE = CatsDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nefelium.CatsDemoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CatsDemo;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -780,24 +576,6 @@
 			buildConfigurations = (
 				070AC53E22E8C218007DCE85 /* Debug */,
 				070AC53F22E8C218007DCE85 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		070AC54022E8C218007DCE85 /* Build configuration list for PBXNativeTarget "CatsDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				070AC54122E8C218007DCE85 /* Debug */,
-				070AC54222E8C218007DCE85 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		070AC54322E8C218007DCE85 /* Build configuration list for PBXNativeTarget "CatsDemoUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				070AC54422E8C218007DCE85 /* Debug */,
-				070AC54522E8C218007DCE85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
