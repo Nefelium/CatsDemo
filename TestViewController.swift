@@ -1,9 +1,10 @@
-/*
+// Тестовый вью контроллер, для проверки качества кода
+
 import UIKit
 import RxSwift
 import RxCocoa
 
-class TestViewController: BaseViewController {
+class TestViewController: BaseViewController { //наследуемся от какого-то базового вью контроллера
     
     var viewModel = TestViewModel() // инициализируем вью модель по-умолчанию
     var bag = DisposeBag()
@@ -27,8 +28,8 @@ class TestViewController: BaseViewController {
         viewModel.activity.asDriver()
             .drive(activityIndicator.rx.isAnimating) // activity - булево BehaviourRelay поле, ставим его true, когда начинаем запрос, и false, когда приходит результат запроса
             .disposed(by: bag)
+    // могут быть и другие Rx методы, например обработка каких-то еще данных и других UI-полей
     }
-    // могут быть еще другие Rx методы, например обработка каких-то еще данных и других UI-полей
 }
 
 // саму таблицу реализуем в расширении, чтобы разделить типовой функционал
@@ -38,8 +39,8 @@ extension TestViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "FactsTableViewCell", for: indexPath) as! FactsTableViewCell
-        cell.factLabel.text = viewModel.posts.value[indexPath.row].text
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TestTableViewCell", for: indexPath) as! TestTableViewCell
+        cell.testLabel.text = viewModel.posts.value[indexPath.row].text
         return cell
     }
     
@@ -73,4 +74,3 @@ extension TestViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
 }
-/*
