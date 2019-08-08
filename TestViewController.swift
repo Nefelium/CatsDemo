@@ -40,7 +40,7 @@ extension TestViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TestTableViewCell", for: indexPath) as! TestTableViewCell
-        cell.testLabel.text = viewModel.posts.value[indexPath.row].text
+        cell.configure(viewModel.posts.value[indexPath.row])
         return cell
     }
     
