@@ -52,4 +52,12 @@ extension FavoritesViewController: UITableViewDelegate, UITableViewDataSource {
         return UITableView.automaticDimension
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "Detail", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+        controller.viewModel.catFact.accept(viewModel.posts.value[indexPath.row].text)
+        controller.viewModel.factId.accept(viewModel.posts.value[indexPath.row].id)
+        self.navigationController?.pushViewController(controller, animated: true)
+    }
+    
 }

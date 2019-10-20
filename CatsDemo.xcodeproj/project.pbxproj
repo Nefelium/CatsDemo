@@ -26,6 +26,9 @@
 		070AC56B22EC8EF3007DCE85 /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070AC56A22EC8EF3007DCE85 /* FavoritesTableViewCell.swift */; };
 		07E112B922ED70C800045D48 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E112B822ED70C800045D48 /* BaseViewModel.swift */; };
 		07E112BD22EDC14700045D48 /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E112BC22EDC14700045D48 /* FavoritesViewModel.swift */; };
+		07F34083235CCC5F00D569D7 /* catPrint@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07F34080235CCC5E00D569D7 /* catPrint@2x.png */; };
+		07F34084235CCC5F00D569D7 /* catPrint.png in Resources */ = {isa = PBXBuildFile; fileRef = 07F34081235CCC5E00D569D7 /* catPrint.png */; };
+		07F34085235CCC5F00D569D7 /* catPrint@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07F34082235CCC5E00D569D7 /* catPrint@3x.png */; };
 		0D1D9E0031500C5EBEF8C4E5 /* Pods_CatsDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC1CF68F4621BE67793E2A5B /* Pods_CatsDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +55,9 @@
 		070AC56A22EC8EF3007DCE85 /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
 		07E112B822ED70C800045D48 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		07E112BC22EDC14700045D48 /* FavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
+		07F34080235CCC5E00D569D7 /* catPrint@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "catPrint@2x.png"; sourceTree = "<group>"; };
+		07F34081235CCC5E00D569D7 /* catPrint.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = catPrint.png; sourceTree = "<group>"; };
+		07F34082235CCC5E00D569D7 /* catPrint@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "catPrint@3x.png"; sourceTree = "<group>"; };
 		0DB92434A9A7AC45C5262BBD /* Pods-CatsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatsDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CatsDemo/Pods-CatsDemo.release.xcconfig"; sourceTree = "<group>"; };
 		CC1CF68F4621BE67793E2A5B /* Pods_CatsDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatsDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -105,6 +111,9 @@
 		070AC54622E8C284007DCE85 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				07F34081235CCC5E00D569D7 /* catPrint.png */,
+				07F34080235CCC5E00D569D7 /* catPrint@2x.png */,
+				07F34082235CCC5E00D569D7 /* catPrint@3x.png */,
 				070AC54722E8C29C007DCE85 /* cat-facts.png */,
 				070AC54822E8C29C007DCE85 /* cat-favs.png */,
 			);
@@ -289,6 +298,9 @@
 				070AC54A22E8C29C007DCE85 /* cat-favs.png in Resources */,
 				070AC52322E8C218007DCE85 /* LaunchScreen.storyboard in Resources */,
 				070AC52022E8C218007DCE85 /* Assets.xcassets in Resources */,
+				07F34083235CCC5F00D569D7 /* catPrint@2x.png in Resources */,
+				07F34084235CCC5F00D569D7 /* catPrint.png in Resources */,
+				07F34085235CCC5F00D569D7 /* catPrint@3x.png in Resources */,
 				070AC54922E8C29C007DCE85 /* cat-facts.png in Resources */,
 				070AC51E22E8C217007DCE85 /* Main.storyboard in Resources */,
 				070AC54C22E8C547007DCE85 /* Detail.storyboard in Resources */,
@@ -326,36 +338,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-CatsDemo/Pods-CatsDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
-				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
-				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxRealm/RxRealm.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-CatsDemo/Pods-CatsDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRealm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-CatsDemo/Pods-CatsDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CatsDemo/Pods-CatsDemo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CatsDemo/Pods-CatsDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
